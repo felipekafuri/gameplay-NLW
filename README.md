@@ -1,4 +1,4 @@
-# gameplay-NLW
+# Gameplay-App
 Melhor maneira de juntar os amigos e marcar aquela jogatina.
 
 
