@@ -5,13 +5,13 @@ import {Image} from 'react-native'
 
 import { styles } from './styles'
 
+
 type Props = {
   urlImage: string
 }
 
-
-
 export function Avatar({ urlImage }: Props) {
+
   return (
     <LinearGradient
       style={styles.container}

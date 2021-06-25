@@ -1,9 +1,13 @@
 import React from 'react'
 import { View, Text } from 'react-native'
+import { useAuth } from '../../hooks/auth'
 
 import { styles } from './styles'
 
 export function Profile() {
+  const {user} = useAuth()
+
+
   return (
     <View style={styles.container}>
       <View>
@@ -13,7 +17,7 @@ export function Profile() {
           </Text>
 
           <Text style={styles.username}>
-            Felipe
+            {user.firstName}
           </Text>
         </View>
 

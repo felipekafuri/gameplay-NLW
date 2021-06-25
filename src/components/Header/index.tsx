@@ -9,6 +9,7 @@ import { theme } from '../../global/styles/theme'
 import { styles } from './styles'
 import { useNavigation } from '@react-navigation/native'
 
+
 interface Props {
   title: string
   action?: ReactNode
@@ -16,6 +17,7 @@ interface Props {
 
 export function Header({ title, action }: Props) {
   const {goBack} = useNavigation()
+
 
   return (
     <LinearGradient style={styles.container} colors={[theme.colors.secondary100, theme.colors.secondary40]}>
@@ -28,9 +30,11 @@ export function Header({ title, action }: Props) {
       </Text>
 
       {
-        action && <View>
+        action ? <View>
           {action}
         </View>
+          :
+        <View style={{width: 24}}/>
       }
     </LinearGradient>
   )

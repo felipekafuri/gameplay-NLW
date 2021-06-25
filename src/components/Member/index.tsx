@@ -18,7 +18,7 @@ type Props = {
 
 export function Member({ data }: Props) {
   const isOnline = data.status === 'online'
-
+    
   return (
     <View style={styles.container}>
       <Avatar urlImage={data.avatar_url} />

@@ -10,7 +10,10 @@ export const styles = StyleSheet.create({
     color: theme.colors.heading,
     borderRadius:8,
     fontFamily: theme.fonts.text400,
-    fontSize: 13
+    fontSize: 13,
+    padding: 16,
+    borderWidth: 1,
+    borderColor: theme.colors.secondary50
   },
  
 })
